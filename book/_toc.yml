@@ -3,8 +3,9 @@ root: intro.md
 
 parts:
   - caption: Workshops
-# START REMOVE-FROM-PUBLISH
     chapters:
+    - file: blank.md
+# START REMOVE-FROM-PUBLISH
     - file: 2024/workshop/01.ipynb
       sections:
       - file: 2024/workshop/01_solution.ipynb

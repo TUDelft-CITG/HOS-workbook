@@ -4,8 +4,6 @@ root: intro.md
 parts:
   - caption: Workshops
     chapters:
-    - file: blank.md
-# START REMOVE-FROM-PUBLISH
     - file: 2024/workshop/01.ipynb
       sections:
       - file: 2024/workshop/01_solution.ipynb
@@ -65,7 +63,6 @@ parts:
     - file: 2024/system/fault_tree
       sections:
       - file: 2024/EVA/poisson
-# END REMOVE-FROM-PUBLISH
 # START REMOVE-FROM-PUBLISH
       sections:
       - file: some_content/text_and_code.ipynb

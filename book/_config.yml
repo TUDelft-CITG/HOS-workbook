@@ -25,6 +25,9 @@ sphinx:
       use_issues_button : true
       launch_buttons:
           thebe: true
+# START REMOVE-FROM-PUBLISH
+      announcement: "This is a DRAFT version of the book. Current students visit <a href='https://tudelft-citg.github.io/HOS-workbook/' style='color:white'>tudelft-citg.github.io/HOS-workbook</a>."
+# END REMOVE-FROM-PUBLISH
   extra_extensions:
     - sphinx.ext.imgconverter
     - jupyterbook_patches

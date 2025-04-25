@@ -6,7 +6,7 @@ parts:
     chapters:
     - file: blank.md
     - file: workshops/WS01_solution.ipynb
-  # START REMOVE-FROM-PUBLISH
+# START REMOVE-FROM-PUBLISH
       sections:
       - file: workshop/01_solution.ipynb
     - file: workshop/02.md

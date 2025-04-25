@@ -3,7 +3,7 @@
 
 Another popular graphical method to select the threshold when performing POT is the GPD Parameter Stability plots[^coles]. This technique is based on the property of GPD distribution of being "threshold stable". This means that if the exceedances over a high threshold $th_0$ follow a GPD with parameters $\xi$ and $\sigma_{th0}$, then for any other threshold $th>th_0$, the exceedances will also follow a GPD with the same shape parameter $\xi$ and a scale parameter $\sigma_{th}=\sigma_{th0}+\xi(th-th_0)$.
 
-Let $\sigma^*=\sigma_{th}-\xi th$. Then, $\sigma^*=\xi th_0$, which does not depend on $th$ any more. 
+Let $\sigma^*=\sigma_{th}-\xi th$. Then, $\sigma^*=\sigma_{th0}-\xi th_0$, which does not depend on $th$ any more. 
 
 The parameter stability plot is then defined as
 

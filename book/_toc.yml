@@ -5,9 +5,6 @@ parts:
     chapters:
     - file: workshops/WS01_solution.ipynb
 # START REMOVE-FROM-PUBLISH
-    - file: workshop/01.ipynb
-      sections:
-      - file: workshop/01_solution.ipynb
     - file: workshop/02.md
       title: Workshop 02
       sections:
@@ -43,6 +40,8 @@ parts:
       title: Workshop 07
     - file: workshop/08.md
       title: Workshop 08
+# END REMOVE-FROM-PUBLISH
+# START REMOVE-FROM-PUBLISH
   - caption: EVA
     chapters:
     - file: EVA/overview

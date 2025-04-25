@@ -4,7 +4,7 @@ parts:
   - caption: Workshops
     chapters:
     - file: workshops/WS01_solution.ipynb
-# START REMOVE-FROM-PUBLISH
+START REMOVE-FROM-PUBLISH
     - file: workshop/02.md
       title: Workshop 02
       sections:
@@ -67,7 +67,7 @@ parts:
 # START REMOVE-FROM-PUBLISH
       sections:
       - file: some_content/text_and_code.ipynb
-# END REMOVE-FROM-PUBLISH
+END REMOVE-FROM-PUBLISH
   - caption: Miscellaneous
     chapters:
     - file: references.md

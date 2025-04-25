@@ -65,8 +65,6 @@ parts:
     - file: system/fault_tree
       sections:
       - file: EVA/poisson
-# END REMOVE-FROM-PUBLISH
-# START REMOVE-FROM-PUBLISH
       sections:
       - file: some_content/text_and_code.ipynb
 # END REMOVE-FROM-PUBLISH

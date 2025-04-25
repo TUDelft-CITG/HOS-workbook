@@ -39,11 +39,11 @@ In order to exemplify how to actually implement MRL plot, pseudo code is present
 
     #define parameters
     dl = 48 #in hours
-    range_thresholds = linspace(min, max, step)
+    range_thresholds = equispaced vector from min until max with step
 
-    for i in length(range_thresholds):
-        excesses = find_peaks(observations, threshold = th[i], distance = dl) - th[i]
-        mean_excesses[i] = mean(excesses)
+    for each th in range_thresholds:
+        excesses = (find peaks in observations with threshold = th and declustering time = dl) - th
+        mean_excesses of that th = mean(excesses)
     
     plot(x = range_threshold, y = mean_excesses)
     

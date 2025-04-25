@@ -40,15 +40,15 @@ parts:
   #     title: Workshop 07
   #   - file: workshop/08.md
   #     title: Workshop 08
-  # - caption: EVA
-  #   chapters:
-  #   - file: EVA/overview
-  #   - file: EVA/threshold
-  #     sections:
-  #     - file: EVA/poisson
-  #     - file: EVA/mrl
-  #     - file: EVA/stability
-  #     - file: EVA/dispersion_index
+  - caption: EVA
+    chapters:
+    - file: EVA/overview
+    - file: EVA/threshold
+      sections:
+      - file: EVA/poisson
+      - file: EVA/mrl
+      - file: EVA/stability
+      - file: EVA/dispersion_index
   # - caption: Component Reliability
   #   chapters:
   #   - file: component/overview

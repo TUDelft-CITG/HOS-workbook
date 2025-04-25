@@ -13,7 +13,7 @@ Empirical pmf and cdf for number of excesses per year.
 
 Now, we can fit a Poisson distribution to that empirical distribution and check whether the Poisson distribution is a reasonable model for our number of excesses per year.
 
-We can fit such distribution using *L-moments* method, which consists of estimating the parameters of the distribution based on the moments calculated from the data (mean, standard deviation...). Applying the properties of the Poisson distribution, $E[X]=Var[X]=\lambda$, being $\lambda$ the distribution parameter. Based on that, we can conclude:
+We can fit such distribution using *Moments* method, which consists of estimating the parameters of the distribution based on the moments calculated from the data (mean, standard deviation...). Applying the properties of the Poisson distribution, $E[X]=Var[X]=\lambda$, being $\lambda$ the distribution parameter. Based on that, we can conclude:
 - Using my observations, $E[X]=2.84$ and $Var[X]= 1.92$. Thus, $E[X]=Var[X]$ is not true for our observations, but we can assume $E[X]\approx Var[X]$.
 - We can assume a fitted Poisson with $\lambda = E[X]= 2.84$ for the subsequent analysis.
 

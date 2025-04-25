@@ -5,8 +5,8 @@ parts:
   - caption: Workshops
     chapters:
     - file: blank.md
-# START REMOVE-FROM-PUBLISH
-    - file: workshop/01.ipynb
+    - file: workshops/WS01_solution.ipynb
+  # START REMOVE-FROM-PUBLISH
       sections:
       - file: workshop/01_solution.ipynb
     - file: workshop/02.md

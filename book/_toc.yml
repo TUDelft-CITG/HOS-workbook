@@ -3,7 +3,7 @@ root: intro.md
 parts:
   - caption: Workshops
     chapters:
-    - file: workshops/WS01.ipynb
+    - file: workshops/WS01_solution.ipynb
   - caption: Miscellaneous
     chapters:
     - file: references.md

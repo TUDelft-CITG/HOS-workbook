@@ -1,7 +1,7 @@
 # Overview
 
 ```{note}
-Remember, the concept of _component reliability analysis_ is introduced in the textbook [here](https://teachbooks.tudelft.nl/risk-reliability/reliability-component/overview.html). The pages in this workbook provide additional information to help you through the exercises and workshop assignments related to this material.
+Remember, the concept of _component reliability analysis_ is introduced in the textbook [here](https://teachbooks.tudelft.nl/risk-reliability/reliability-component/overview.html), which includes two simple numerical examples. The pages in this workbook provide additional information to help you through the exercises and workshop assignments related to this material.
 ```
 
 There are several key ingredients needed for a component reliability analysis:
@@ -15,7 +15,7 @@ $$
 P[\Omega] = \int_{\Omega} f_X(x) \; \mathrm{d} X
 $$
 
-In many civil engineering applications, we wish to evaluate failure probability (the inverse of reliability) of a particular object (i.e., the _component_). If we can formulate a function of random variables such that the output defines _failure_ of the component, then $P[\Omega]$ is the failure probability, $p_f$.
+In many civil engineering applications, we wish to evaluate failure probability (the complement of reliability) of a particular object (i.e., the _component_). If we can formulate a function of random variables such that the output defines _failure_ of the component, then $P[\Omega]$ is the failure probability, $p_f$.
 
 By convention, we prefer to write our function of random variables $q_X(x)$ such that values less than zero denote a failed condition; we also use the notation $g_X(x)$. The failure probability integral thus becomes:
 

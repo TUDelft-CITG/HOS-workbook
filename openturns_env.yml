@@ -1,0 +1,22 @@
+name: openturns25
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.12
+  - pyvinecopulib
+  - openturns
+  - numpy
+  - scipy
+  - pandas
+  - matplotlib
+  - sympy           # PA 1.8
+  - seaborn         # avoid pip, for bivariate
+  - scikit-learn    # avoid pip, for bivariate
+  - threadpoolctl   # avoid pip, for scikit-learn
+  - joblib          # avoid pip, for scikit-learn
+  - jupyter
+  - ipykernel
+  - pip
+  - pip:
+    - bivariate

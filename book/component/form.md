@@ -1,10 +1,10 @@
 # First-Order Reliability Method (FORM)
 
-This page gives an overview of the First-Order Reliability Method (FORM). It is an algorithm for solving the component reliability problem, which was first applied during Workshop 04. Once reading through this page, it may be useful to refer back to the solution for WS04, especially the graphical interpretation in the notebook.
+This page gives an overview of the First-Order Reliability Method (FORM). It is an algorithm for solving the component reliability problem.
 
 ## A Linearized Solution
 
-The "FO" part of the algorithm name stands for "First Order" because the method is based on a linearized approximation (using a Taylor Series) of the limit-state function. This can be visualized in the figure below, where the 
+The "FO" part of the algorithm name stands for "First Order" because the method is based on a linearized approximation (using a Taylor Series) of the limit-state function. This can be visualized in the figure below, where the contours illustrated in the figure are probability density.
 
 ```{image} ./figures/form_x.jpg
 :alt: form in x space
@@ -12,7 +12,7 @@ The "FO" part of the algorithm name stands for "First Order" because the method 
 :align: center
 ```
 
-The contours illustrated in the figure are probability density. It is essential to recognize that the probability of interest (i.e., failure probability) is the volume underneath the shaded area and is found by integrating the probability density in the region of interest.
+It is essential to recognize that the probability of interest (i.e., failure probability) is the volume underneath the shaded area and is found by integrating the probability density in the region of interest.
 
 ## Design Point
 
@@ -84,8 +84,7 @@ $$
 This is a vector of values, one for each of the $n$ random variables:
 
 $$
-\alpha = \big[\alpha_1 \,\, \alpha_2 \,\,
-+ \, \ldots \, + \,\, \alpha_n\big]
+\alpha = \big[\alpha_1 \,\, , \alpha_2 \,\, , \ldots , \, \,\, \alpha_n\big]
 $$
 
 ## Importance Factors, $\alpha$

@@ -134,3 +134,6 @@ _build/
 
 # poetry files
 pyproject.toml
+
+# teachbooks
+.teachbooks/

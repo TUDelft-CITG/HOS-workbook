@@ -57,6 +57,7 @@ parts:
     - file: component/notation
     - file: component/form
     - file: component/mcs_form
+    - file: component/openturns
   # - caption: System Reliability
   #   chapters:
   #   - file: system/overview

@@ -5,7 +5,6 @@ parts:
   - caption: Workshops
     chapters:
     - file: workshops/WS01_solution.ipynb
-
   #   - file: workshop/02.md
   #     title: Workshop 02
   #     sections:
@@ -15,13 +14,13 @@ parts:
   #       title: Analysis
   #     - file: workshop/02/feedback.md
   #       title: Feedback
-    - file: workshop/03.md
+    - file: workshops/03.md
       title: Workshop 03
 # START REMOVE-FROM-PUBLISH
       sections:
-      - file: workshop/03/report.md
+      - file: workshops/03/report.md
         title: Report
-      - file: workshop/03/analysis.ipynb
+      - file: workshops/03/analysis.ipynb
         title: Analysis
   #   - file: workshop/05.md
   #     title: Workshop 05

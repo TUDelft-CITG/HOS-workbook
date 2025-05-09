@@ -16,7 +16,6 @@ parts:
   #       title: Feedback
     - file: workshops/03.md
       title: Workshop 03
-# START REMOVE-FROM-PUBLISH
       sections:
       - file: workshops/03/report.md
         title: Report
@@ -39,7 +38,6 @@ parts:
   #     title: Workshop 07
   #   - file: workshop/08.md
   #     title: Workshop 08
-  # END REMOVE-FROM-PUBLISH
   - caption: EVA
     chapters:
     - file: EVA/overview

@@ -1,10 +1,10 @@
-# Component Reliability Analysis
+# Workshop 03: Component Reliability
 
 _This solution refers to specific Tasks in the notebook `Analysis_Solution.ipynb`._
 
 Complete the tasks in `Analysis.ipynb` then answer the following questions.
 
-**Question 1:** Describe the component reliability analysis, making sure to identify the 5 key ingredients (outlined in the lecture and [here](https://teachbooks.github.io/HOS-workbook/2024/component/overview.html)):
+**Question 1:** Describe the component reliability analysis, making sure to identify the 5 key ingredients (outlined in the lecture and [here](https://tudelft-citg.github.io/HOS-workbook/2025/component/overview.html)):
 
 We were provided a limit-state function, $g_X(x)$ that defined stability of a beam due to 3 loads: two moments and an axial force. The resistance of the beam is defined by $Y$. These are the four random variables that make $g_X(x)$ our function of random variables. There are also 3 deterministic parameters.
 
@@ -61,10 +61,10 @@ Recall the mean of the LSF is $\mu_{g_X(x)}=g_X(\mu_X)$=4.751e-1.
 
 **Question 5:** The notebook asked you to consider two linearized approximations of the function of random variables. What was the difference between these two approaches?
 
-The primary difference is in the linearization point (expantion point from Taylor Series) used in the linear approximation of the limit state function.
+The primary difference is in the linearization point (expansion point from Taylor Series) used in the linear approximation of the limit state function.
 
 **Question 6:** Why do you think the FORM approach produces such a different failure probability than the MUDE linearization approach?
 
-The reason the computed failure probabilities are different is that the linearized LSF are different, due to the expansion points. The sketch below illustrates how the linearization point can dramatically change the linearized function; although illustrated for a 1D case, the illustration can be extended to multiple dimensions. The reason that this influences failure probably is obvious if one recalls that to find $p_f$ we are integrating the multiviariate probability _density_ function over a region of interest that is defined by the function. In other words, integrating over a region indicated by the shaded zones in the sketch, which are clearly different.
+The reason the computed failure probabilities are different is that the linearized LSF are different, due to the Taylor Series expansion points. The sketch below illustrates how the linearization point can dramatically change the linearized function; although illustrated for a 1D case ($g_X(x)$), the result is analogous to higher dimensions. The reason that this influences failure probably is obvious if one recalls that to find $p_f$ we are integrating the multiviariate probability _density_ function over a region of interest that is defined by the function. In other words, integrating over a region indicated by the shaded zones in the sketch, which will clearly give different quantities for $p_f$ (i.e., different areas).
 
 ![sketch](./sketch.jpg)

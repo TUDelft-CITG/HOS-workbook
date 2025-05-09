@@ -1,10 +1,10 @@
-# Component Reliability Analysis
+# Workshop 03: Component Reliability
 
-_This solution refers to specific Tasks in the notebook `Analysis_Solution.ipynb`._
+_This solution refers to specific Tasks in the notebook `analysis.ipynb`._
 
-Complete the tasks in `Analysis.ipynb` then answer the following questions.
+Complete the tasks in `analysis.ipynb` then answer the following questions.
 
-**Question 1:** Describe the component reliability analysis, making sure to identify the 5 key ingredients (outlined in the lecture and [here](https://teachbooks.github.io/HOS-workbook/2024/component/overview.html)):
+**Question 1:** Describe the component reliability analysis, making sure to identify the 5 key ingredients (outlined in the lecture and [here](https://tudelft-citg.github.io/HOS-workbook/2025/component/overview.html)):
 
 We were provided a limit-state function, $g_X(x)$ that defined stability of a beam due to 3 loads: two moments and an axial force. The resistance of the beam is defined by $Y$. These are the four random variables that make $g_X(x)$ our function of random variables. There are also 3 deterministic parameters.
 
@@ -17,7 +17,7 @@ The final ingredient is the algorithm for finding $p_f$, and we use three:
 - Monte Carlo Simulation
 - First-Order Reliability Method (FORM)
 
-_Note that explaining this to a fellow student from memory would be good oral exam practice._
+_Tip: explaining this to a fellow student from memory would be good oral exam practice._
 
 **Question 2:** The notebook guided you through three component reliability algorithms. Describe the differences in approach.
 
@@ -25,13 +25,17 @@ Monte Carlo Simulation (MCS) is based on taking a sample from the multivariate d
 
 The other two methods are different from MCS as they rely on a linear approximation of the limit-state function. The first method linearizes the LSF using the mean point as the expansion point, whereas the First-Order Reliability Method (FORM) uses a different expansion point, defined by the design point. We were not told much about the design point in the assignment (especially how it is found), but it appears to be located on the limit-state surface. Thus, the main difference between the two linearization method seems to be that FORM approximates the function closer to the failure region of the component (i.e., it is looking more at the "tails" of the multivariate distribution).
 
-**Question 3:** State the calculated failure probability for each of the methods used.
+**Question 3:** State the calculated failure probability for each of the methods used. Observe the differences between results and provide an explanation for why it exists.
 
-| Method | Independent ($\rho=0$) | Independent ($\rho=0.5$) |
+_Your answer here (a table would be very useful)._
+
+| Method | Independent ($\rho=0$) | Dependent ($\rho=0.5$) |
 | :---: | :---: | :---: |
 | MCS | 0.0051 | 0.0070 |
 | FORM | 0.0033 | 0.0044 |
 | Linear Model | 2.45e-5 | N/A |
+
+It looks like FORM is consistently under-predicting the failure probability, compared to MCS. This is likely due to the fact that FORM is using a linear approximation of the LSF, and if the value is less than that from MCS it means the "true" LSF is concave in the locality of the design point, with respect to the mean point; in other words, the linearized LSF does not include all of the probability density in the failed region near the design point.
 
 **Question 4:** Which random variables have the biggest influence on the calculated failure probability? Justify your answer quantitatively.
 
@@ -61,10 +65,12 @@ Recall the mean of the LSF is $\mu_{g_X(x)}=g_X(\mu_X)$=4.751e-1.
 
 **Question 5:** The notebook asked you to consider two linearized approximations of the function of random variables. What was the difference between these two approaches?
 
-The primary difference is in the linearization point (expantion point from Taylor Series) used in the linear approximation of the limit state function.
+The primary difference is in the linearization point (expansion point from Taylor Series) used in the linear approximation of the limit state function.
 
-**Question 6:** Why do you think the FORM approach produces such a different failure probability than the MUDE linearization approach?
+**Question 6:** Why do you think the FORM approach produces such a different failure probability than the MUDE linearization approach? Use the plots created at the end of the assignment to confirm your answer. You can include the plots or a sketch.
 
-The reason the computed failure probabilities are different is that the linearized LSF are different, due to the expansion points. The sketch below illustrates how the linearization point can dramatically change the linearized function; although illustrated for a 1D case, the illustration can be extended to multiple dimensions. The reason that this influences failure probably is obvious if one recalls that to find $p_f$ we are integrating the multiviariate probability _density_ function over a region of interest that is defined by the function. In other words, integrating over a region indicated by the shaded zones in the sketch, which are clearly different.
+The reason the computed failure probabilities are different is that the linearized LSF are different, due to the Taylor Series expansion points. The sketch below illustrates how the linearization point can dramatically change the linearized function; although illustrated for a 1D case ($g_X(x)$), the result is analogous to higher dimensions. The reason that this influences failure probably is obvious if one recalls that to find $p_f$ we are integrating the multiviariate probability _density_ function over a region of interest that is defined by the function. In other words, integrating over a region indicated by the shaded zones in the sketch, which will clearly give different quantities for $p_f$ (i.e., different areas).
 
 ![sketch](./sketch.jpg)
+
+_Tip: sketching these figures by hand and from memory would be good oral exam practice._

@@ -1,5 +1,5 @@
-title: Template
-author: TeachBooks
+title: HOS Workbook
+author: Robert Lanzafame and Patricia Mares Nasarre
 logo: figures/TUDelft_logo_rgb.png
 copyright: Delft University of Technology, CC BY 4.0
 
@@ -20,7 +20,7 @@ sphinx:
       use_thebe_lite: true
       exclude_patterns: ["**/_*.yml", "**/*.md", "**/*.ipynb"]
     html_theme_options:
-      repository_url: "https://github.com/TeachBooks/template"
+      repository_url: "https://github.com/TUDelft-CITG/HOS-workbook"
       use_repository_button: true
       use_issues_button : true
       launch_buttons:

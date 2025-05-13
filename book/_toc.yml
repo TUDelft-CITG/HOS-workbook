@@ -5,8 +5,8 @@ parts:
   - caption: Workshops
     chapters:
     - file: workshops/WS01_solution.ipynb
-  #   - file: workshop/02.md
-  #     title: Workshop 02
+    - file: workshop_OLD/02/analysis.ipynb
+      title: Workshop 02
   #     sections:
   #     - file: workshop/02/report.md
   #       title: Report

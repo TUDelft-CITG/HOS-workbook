@@ -21,17 +21,19 @@ parts:
         title: Report
       - file: workshops/03/analysis.ipynb
         title: Analysis
-  #   - file: workshop/05.md
-  #     title: Workshop 05
-  #     sections:
-  #     - file: workshop/05/report.md
-  #       title: Report
-  #     - file: workshop/05/analysis_det.ipynb
-  #       title: Analysis (Deterministic)
-  #     - file: workshop/05/analysis_rel.ipynb
-  #       title: Analysis (Reliability)
-  #     - file: workshop/05/feedback.md
-  #       title: Feedback
+  # START REMOVE-FROM-RELEASE
+    - file: workshop/05.md
+      title: Workshop 05
+      sections:
+      - file: workshop/05/report.md
+        title: Report
+      - file: workshop/05/analysis_det.ipynb
+        title: Analysis (Deterministic)
+      - file: workshop/05/analysis_rel.ipynb
+        title: Analysis (Reliability)
+      - file: workshop/05/feedback.md
+        title: Feedback
+  # END REMOVE-FROM-RELEASE
   #   - file: workshop/06.md
   #     title: Workshop 06
   #   - file: workshop/07.md

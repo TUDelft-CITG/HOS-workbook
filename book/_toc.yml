@@ -25,10 +25,8 @@ parts:
     - file: workshops/04.md
       title: Workshop 04
       sections:
-  # START REMOVE-FROM-RELEASE
       - file: workshops/04/report.md
         title: Report
-  # END REMOVE-FROM-RELEASE
       - file: workshops/04/analysis_det.ipynb
         title: Analysis (Deterministic)
       - file: workshops/04/analysis_rel.ipynb

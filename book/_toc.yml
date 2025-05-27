@@ -57,6 +57,8 @@ parts:
     - file: component/form
     - file: component/mcs_form
     - file: component/openturns
+    - file: component/lectures
+      title: Lectures
   # - caption: System Reliability
   #   chapters:
   #   - file: system/overview

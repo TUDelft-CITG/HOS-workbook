@@ -25,18 +25,12 @@ parts:
     - file: workshops/04.md
       title: Workshop 04
       sections:
-  # START REMOVE-FROM-RELEASE
       - file: workshops/04/report.md
         title: Report
-  # END REMOVE-FROM-RELEASE
       - file: workshops/04/analysis_det.ipynb
         title: Analysis (Deterministic)
       - file: workshops/04/analysis_rel.ipynb
         title: Analysis (Reliability)
-  # START REMOVE-FROM-RELEASE
-      - file: workshops/04/feedback.md
-        title: Feedback
-  # END REMOVE-FROM-RELEASE
   #   - file: workshop/06.md
   #     title: Workshop 06
   #   - file: workshop/07.md
@@ -59,6 +53,8 @@ parts:
     - file: component/form
     - file: component/mcs_form
     - file: component/openturns
+    - file: component/lectures
+      title: Lectures
   # - caption: System Reliability
   #   chapters:
   #   - file: system/overview

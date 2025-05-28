@@ -31,10 +31,6 @@ parts:
         title: Analysis (Deterministic)
       - file: workshops/04/analysis_rel.ipynb
         title: Analysis (Reliability)
-  # START REMOVE-FROM-RELEASE
-      - file: workshops/04/feedback.md
-        title: Feedback
-  # END REMOVE-FROM-RELEASE
   #   - file: workshop/06.md
   #     title: Workshop 06
   #   - file: workshop/07.md

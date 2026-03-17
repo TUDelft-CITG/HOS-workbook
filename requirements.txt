@@ -2,6 +2,9 @@
 teachbooks # depends on jupyter-book
 jupyterbook-patches
 download_link_replacer
+jupyter-book==0.14.0
+sphinx==5.3.0
+myst-nb==0.17.2
 # numpy
 
 # docutils version for reference page formatting

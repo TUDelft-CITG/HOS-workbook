@@ -4,7 +4,7 @@
 This book is a place to share a variety of material that doesn't necessarily fit into other online textbooks or websites use in the Hydraulic and Offshore Structures (HOS) Track in the Civil Engineering MSc Program at TU Delft. Many pages will use the interactive Python feature to demonstrate and enable the use of Python code for computational exercises.  
 
 ```{note}
-This workbook is created for Q4 of the 2023-24 academic year. Although we will try to preserve links in the future using the year as part of the address for each page (e.g., `teachbooks.github.io/HOS-workbook/2024/...`), it is not guaranteed to stay in place beyond the end of Q3 the following year. Interactive pages will be maintained at least until the end of Q4 this year. Contact Robert Lanzafame with questions or issues.
+This workbook is created for Q4 of the 2025-26 academic year. Although we will try to preserve links in the future using the year as part of the address for each page (e.g., `teachbooks.github.io/HOS-workbook/2026/...`), it is not guaranteed to stay in place beyond the end of Q3 the following year. Interactive pages will be maintained at least until the end of Q4 this year. Contact Patricia Mares Nasarre with questions or issues.
 ```
 
 ## HOS Track B Modules

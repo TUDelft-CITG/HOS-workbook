@@ -3,10 +3,10 @@ root: intro.md
 
 parts:
   - caption: Workshops
-    chapters:
-    - file: workshops/WS01_solution.ipynb
-    - file: workshop_OLD/02/analysis.ipynb
-      title: Workshop 02
+    # chapters:
+    # - file: workshops/WS01_solution.ipynb
+    # - file: workshop_OLD/02/analysis.ipynb
+    #   title: Workshop 02
   #     sections:
   #     - file: workshop/02/report.md
   #       title: Report
@@ -14,23 +14,23 @@ parts:
   #       title: Analysis
   #     - file: workshop/02/feedback.md
   #       title: Feedback
-    - file: workshops/03.md
-      title: Workshop 03
-      sections:
-      - file: workshops/03/report.md
-        title: Report
-      - file: workshops/03/analysis.ipynb
+    # - file: workshops/03.md
+    #   title: Workshop 03
+    #   sections:
+    #   - file: workshops/03/report.md
+    #     title: Report
+    #   - file: workshops/03/analysis.ipynb
         title: Analysis
 
-    - file: workshops/04.md
-      title: Workshop 04
-      sections:
-      - file: workshops/04/report.md
-        title: Report
-      - file: workshops/04/analysis_det.ipynb
-        title: Analysis (Deterministic)
-      - file: workshops/04/analysis_rel.ipynb
-        title: Analysis (Reliability)
+    # - file: workshops/04.md
+    #   title: Workshop 04
+    #   sections:
+    #   - file: workshops/04/report.md
+    #     title: Report
+    #   - file: workshops/04/analysis_det.ipynb
+    #     title: Analysis (Deterministic)
+    #   - file: workshops/04/analysis_rel.ipynb
+    #     title: Analysis (Reliability)
   #   - file: workshop/06.md
   #     title: Workshop 06
   #   - file: workshop/07.md
@@ -46,15 +46,15 @@ parts:
       - file: EVA/mrl
       - file: EVA/stability
       - file: EVA/dispersion_index
-  - caption: Component Reliability
-    chapters:
-    - file: component/overview
-    - file: component/notation
-    - file: component/form
-    - file: component/mcs_form
-    - file: component/openturns
-    - file: component/lectures
-      title: Lectures
+  # - caption: Component Reliability
+  #   chapters:
+  #   - file: component/overview
+  #   - file: component/notation
+  #   - file: component/form
+  #   - file: component/mcs_form
+  #   - file: component/openturns
+  #   - file: component/lectures
+  #     title: Lectures
   # - caption: System Reliability
   #   chapters:
   #   - file: system/overview
